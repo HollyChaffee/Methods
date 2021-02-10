@@ -8,9 +8,9 @@ Practicing Java methods, refining method definitions and method usage
 4. Create a second method called calculateHighScorePosition
 5. Send one argument only to this second method - the player score, it should return an int
 6. The return data should be:
-   - 1 if the score is > 1000
-   - 2 if the score is > 500 and < 1000
-   - 3 if the score is > 100 and < 500
+   - 1 if the score is >= 1000
+   - 2 if the score is >= 500 and < 1000
+   - 3 if the score is >= 100 and < 500
    - 4 in all other cases
 7. Call both methods and display the results of the following:
    - A score of 1500, 900, 400, and 50
