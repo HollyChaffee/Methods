@@ -35,24 +35,24 @@ public class Main {
 		displayHighScorePosition("Ashley", highScorePosition);
 
 	}
-
 	public static void displayHighScorePosition(String playerName, int highScorePosition) {
-		System.out.println(playerName + "managed to get into position " + highScorePosition + " on the high score table");
+		System.out.println(playerName + " managed to get into position " + highScorePosition + " on the high score table");
 	}
-
 		public static int calculateHighScorePosition(int playerScore){
 
-			if (playerScore >= 1000) {
-				return 1;
-			} else if (playerScore >= 500 && playerScore < 1000) {
-				return 2;
-			} else if (playerScore >= 100 && playerScore < 500) {
-				return 3;
-			} else {
-				return 4;
-			}
-		}
+			int position = 4;  // If none of the conditional statements return true, then the 4 will be returned because it is initially set to 4 here (default).
 
+			if (playerScore >= 1000) {
+				position = 1;
+			} else if (playerScore >= 500) { // && playerScore < 1000) {  // Code can be simplified here and the next line by removing
+				position = 2;											// the && playerScore < 1000 because we already evaluated this condition with the first if statement.
+			} else if (playerScore >= 100) {  // && playerScore < 500) {
+				position = 3;
+			}
+
+			return position;
+
+	}
 		public static int calculateScore ( boolean gameOver, int score, int levelCompleted, int bonus){  /*Parameters are what we define when setting
 	up a new method. By defining these parameters, Java will automatically create the variables with the appropriate data type. They will
 	be deleted when the process is completed and goes back to the line after calculateScore. */
