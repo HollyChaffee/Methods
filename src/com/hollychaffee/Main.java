@@ -45,8 +45,8 @@ public class Main {
 			if (playerScore >= 1000) {
 				position = 1;
 			} else if (playerScore >= 500) { // && playerScore < 1000) {  // Code can be simplified here and the next line by removing
-				position = 2;											// the && playerScore < 1000 because we already evaluated this condition with the first if statement.
-			} else if (playerScore >= 100) {  // && playerScore < 500) {
+				position = 2;			     // the && playerScore < 1000 because we already evaluated this condition with the first if statement.
+			} else if (playerScore >= 100) { // && playerScore < 500) {
 				position = 3;
 			}
 
@@ -67,11 +67,6 @@ public class Main {
 
 		}
 	}
-
-
-
-
-
 	/* A method is a block of code (collection of statements) that only runs when it is called. Methods allow us to reuse code which
 	   saves time by not having to re-type code.
 	   Method order -
